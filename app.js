@@ -16,8 +16,8 @@ var models = require('./models/models.js');
 if(process.env.DEV_ENV){
 	mongoose.connect('mongodb://localhost/MylocalDB', {useMongoClient: false}); 
 } else {
-	mongoose.connect('mongodb://wangyj1989:wang890514yi@ds032340.mlab.com:32340/myweb', {useMongoClient: false});
-	//mongoose.connection.openUri('mongodb://wang2510:Guo28199@ds032340.mlab.com:32340/myweb'); 
+	mongoose.connect('mongodb://<id>:<pssd>@<location>', {useMongoClient: false});
+	
 }
             //connect to Mongo
 
